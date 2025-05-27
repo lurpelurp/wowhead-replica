@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Wowhead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-links">
+                    <a href="#" class="header-link">Live</a>
+                    <a href="#" class="header-link">PTR</a>
+                    <a href="#" class="header-link">11.1.7PTR</a>
+                    <a href="#" class="header-link">11.1.0</a>
+                </div>
+                <div class="header-actions">
+                    <div class="theme-selector">
+                        <select id="theme-select" class="theme-select">
+                            <option value="light">🌞 Light</option>
+                            <option value="dark">🌙 Dark</option>
+                            <option value="auto">🔄 Auto</option>
+                        </select>
+                    </div>
+                    <button class="premium-btn">Get Wowhead Premium $2 A Month</button>
+                    <div class="user-actions">
+                        <button class="login-btn">Log In</button>
+                        <button class="register-btn">Register</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="logo">
+                    <img src="https://wow.zamimg.com/images/logos/wowhead-logo.png" alt="Wowhead" class="logo-img">
+                </div>
+                <div class="nav-links">
+                    <a href="/database" class="nav-link">Database</a>
+                    <a href="/guides" class="nav-link">Guides</a>
+                    <a href="/news" class="nav-link">News</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/more" class="nav-link active">More</a>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="/">Home</a> > More
+            </nav>
+
+            <!-- More Header -->
+            <div class="article-header">
+                <div class="guide-contents">
+                    <h3>More Resources</h3>
+                    <div class="patch-info">
+                        <span class="patch-badge">Community Hub</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Content -->
+            <article class="article">
+                <header class="article-title-section">
+                    <h1 class="article-title">More Wowhead Resources</h1>
+                    <div class="article-meta">
+                        <span class="updated">Updated: 2025/03/19</span>
+                        <span class="resource-count">Everything WoW in one place</span>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <!-- Live Features -->
+                    <section class="content-section">
+                        <h2>🔴 Live Features</h2>
+                        <div class="live-features-grid">
+                            <div class="live-feature-card">
+                                <div class="live-indicator">🔴 LIVE</div>
+                                <div class="feature-icon">⚔️</div>
+                                <div class="feature-content">
+                                    <h3>Mythic+ Leaderboards</h3>
+                                    <p>Real-time tracking of the highest Mythic+ runs across all regions</p>
+                                    <div class="live-stats">
+                                        <span class="stat-item">
+                                            <strong>Current Leader:</strong> +32 Ara-Kara
+                                        </span>
+                                        <span class="stat-item">
+                                            <strong>Updated:</strong> 2 minutes ago
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-feature-card">
+                                <div class="live-indicator">🔴 LIVE</div>
+                                <div class="feature-icon">🏆</div>
+                                <div class="feature-content">
+                                    <h3>World First Race Tracker</h3>
+                                    <p>Follow the race for world first mythic raid kills and achievements</p>
+                                    <div class="live-stats">
+                                        <span class="stat-item">
+                                            <strong>Current Progress:</strong> Nerub-ar Palace 8/8M
+                                        </span>
+                                        <span class="stat-item">
+                                            <strong>Leading Guild:</strong> Echo
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-feature-card">
+                                <div class="live-indicator">🔴 LIVE</div>
+                                <div class="feature-icon">💰</div>
+                                <div class="feature-content">
+                                    <h3>Auction House Tracker</h3>
+                                    <p>Live auction house data and price trends across all servers</p>
+                                    <div class="live-stats">
+                                        <span class="stat-item">
+                                            <strong>Trending Item:</strong> Algari Mana Potion
+                                        </span>
+                                        <span class="stat-item">
+                                            <strong>Avg Price:</strong> 45g 32s
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="live-feature-card">
+                                <div class="live-indicator">🔴 LIVE</div>
+                                <div class="feature-icon">🌍</div>
+                                <div class="feature-content">
+                                    <h3>Server Status Monitor</h3>
+                                    <p>Real-time server status and population data for all realms</p>
+                                    <div class="live-stats">
+                                        <span class="stat-item">
+                                            <strong>Online Servers:</strong> 247/250
+                                        </span>
+                                        <span class="stat-item">
+                                            <strong>Total Players:</strong> ~2.1M online
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Community Features -->
+                    <section class="content-section">
+                        <h2>👥 Community</h2>
+                        <div class="community-grid">
+                            <div class="community-card">
+                                <div class="community-icon">💬</div>
+                                <div class="community-content">
+                                    <h3><a href="#">Forums</a></h3>
+                                    <p>Join discussions with fellow players about strategies, lore, and game updates.</p>
+                                    <div class="community-stats">
+                                        <span>45K active users</span>
+                                        <span>2.3M posts</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-card">
+                                <div class="community-icon">🎮</div>
+                                <div class="community-content">
+                                    <h3><a href="#">Discord Server</a></h3>
+                                    <p>Real-time chat with the Wowhead community and get instant help.</p>
+                                    <div class="community-stats">
+                                        <span>125K members</span>
+                                        <span>24/7 active</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="community-card">
+                                <div class="community-icon">📱</div>
+                                <div class="community-content">
+                                    <h3><a href="#">Mobile App</a></h3>
+                                    <p>Access Wowhead on the go with our mobile application.</p>
+                                    <div class="community-stats">
+                                        <span>4.8★ rating</span>
+                                        <span>500K+ downloads</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Additional Resources -->
+                    <section class="content-section">
+                        <h2>📚 Additional Resources</h2>
+                        <div class="resources-grid">
+                            <div class="resource-category">
+                                <h3>📖 Learning Resources</h3>
+                                <div class="resource-list">
+                                    <div class="resource-item">
+                                        <h4><a href="#">New Player Guide</a></h4>
+                                        <p>Complete beginner's guide to World of Warcraft</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">Class Overviews</a></h4>
+                                        <p>Detailed breakdown of all classes and specializations</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">Lore Library</a></h4>
+                                        <p>Comprehensive Warcraft lore and storylines</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">Video Tutorials</a></h4>
+                                        <p>Step-by-step video guides for complex mechanics</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="resource-category">
+                                <h3>🎯 Specialized Tools</h3>
+                                <div class="resource-list">
+                                    <div class="resource-item">
+                                        <h4><a href="#">Addon Manager</a></h4>
+                                        <p>Manage and update your WoW addons easily</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">Screenshot Gallery</a></h4>
+                                        <p>Share and browse amazing WoW screenshots</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">Guild Finder</a></h4>
+                                        <p>Find the perfect guild for your playstyle</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">Event Calendar</a></h4>
+                                        <p>Track in-game events and community activities</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="resource-category">
+                                <h3>📊 Data & Analytics</h3>
+                                <div class="resource-list">
+                                    <div class="resource-item">
+                                        <h4><a href="#">Server Statistics</a></h4>
+                                        <p>Population and activity data for all servers</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">Auction House Data</a></h4>
+                                        <p>Real-time auction house prices and trends</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">Progress Tracking</a></h4>
+                                        <p>Track raid and dungeon progression worldwide</p>
+                                    </div>
+                                    <div class="resource-item">
+                                        <h4><a href="#">API Documentation</a></h4>
+                                        <p>Developer resources and API endpoints</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Premium Features -->
+                    <section class="content-section">
+                        <h2>💎 Premium Features</h2>
+                        <div class="premium-features">
+                            <div class="premium-card">
+                                <div class="premium-header">
+                                    <h3>Wowhead Premium</h3>
+                                    <span class="premium-price">$2/month</span>
+                                </div>
+                                <div class="premium-benefits">
+                                    <ul>
+                                        <li>✅ Ad-free browsing experience</li>
+                                        <li>✅ Advanced search filters</li>
+                                        <li>✅ Priority customer support</li>
+                                        <li>✅ Exclusive premium guides</li>
+                                        <li>✅ Early access to new features</li>
+                                        <li>✅ Enhanced mobile app features</li>
+                                        <li>✅ Custom dashboard and bookmarks</li>
+                                        <li>✅ Premium-only community channels</li>
+                                    </ul>
+                                </div>
+                                <button class="premium-subscribe-btn">Subscribe Now</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Social Media -->
+                    <section class="content-section">
+                        <h2>🌐 Follow Us</h2>
+                        <div class="social-media">
+                            <div class="social-platform">
+                                <div class="social-icon">🐦</div>
+                                <div class="social-content">
+                                    <h4><a href="#">Twitter</a></h4>
+                                    <p>Latest news and updates</p>
+                                    <span class="social-followers">245K followers</span>
+                                </div>
+                            </div>
+                            <div class="social-platform">
+                                <div class="social-icon">📘</div>
+                                <div class="social-content">
+                                    <h4><a href="#">Facebook</a></h4>
+                                    <p>Community discussions and events</p>
+                                    <span class="social-followers">180K likes</span>
+                                </div>
+                            </div>
+                            <div class="social-platform">
+                                <div class="social-icon">📺</div>
+                                <div class="social-content">
+                                    <h4><a href="#">YouTube</a></h4>
+                                    <p>Video guides and tutorials</p>
+                                    <span class="social-followers">95K subscribers</span>
+                                </div>
+                            </div>
+                            <div class="social-platform">
+                                <div class="social-icon">📷</div>
+                                <div class="social-content">
+                                    <h4><a href="#">Instagram</a></h4>
+                                    <p>Screenshots and behind-the-scenes</p>
+                                    <span class="social-followers">67K followers</span>
+                                </div>
+                            </div>
+                            <div class="social-platform">
+                                <div class="social-icon">🎵</div>
+                                <div class="social-content">
+                                    <h4><a href="#">TikTok</a></h4>
+                                    <p>Quick tips and funny moments</p>
+                                    <span class="social-followers">42K followers</span>
+                                </div>
+                            </div>
+                            <div class="social-platform">
+                                <div class="social-icon">🔴</div>
+                                <div class="social-content">
+                                    <h4><a href="#">Reddit</a></h4>
+                                    <p>Community discussions and AMAs</p>
+                                    <span class="social-followers">156K members</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Support & Help -->
+                    <section class="content-section">
+                        <h2>🆘 Support & Help</h2>
+                        <div class="support-grid">
+                            <div class="support-card">
+                                <h3>📞 Contact Support</h3>
+                                <p>Get help with technical issues, account problems, or general questions.</p>
+                                <a href="#" class="support-link">Contact Us</a>
+                            </div>
+                            <div class="support-card">
+                                <h3>❓ FAQ</h3>
+                                <p>Find answers to frequently asked questions about Wowhead features.</p>
+                                <a href="#" class="support-link">View FAQ</a>
+                            </div>
+                            <div class="support-card">
+                                <h3>🐛 Report Bug</h3>
+                                <p>Help us improve by reporting bugs or suggesting new features.</p>
+                                <a href="#" class="support-link">Report Issue</a>
+                            </div>
+                            <div class="support-card">
+                                <h3>📖 User Guide</h3>
+                                <p>Learn how to make the most of Wowhead's features and tools.</p>
+                                <a href="#" class="support-link">Read Guide</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- About Wowhead -->
+                    <section class="content-section">
+                        <h2>ℹ️ About Wowhead</h2>
+                        <div class="about-content">
+                            <p>Wowhead is the premier World of Warcraft database and community site, providing comprehensive information about items, quests, NPCs, and more. Since our launch, we've been dedicated to helping players get the most out of their WoW experience.</p>
+                            
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <h4>15+ Years</h4>
+                                    <p>Serving the WoW community</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>500K+</h4>
+                                    <p>Database entries</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>10M+</h4>
+                                    <p>Monthly visitors</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>2M+</h4>
+                                    <p>Registered users</p>
+                                </div>
+                            </div>
+
+                            <div class="team-info">
+                                <h3>Our Team</h3>
+                                <p>Wowhead is powered by a passionate team of WoW players, developers, and content creators who are dedicated to providing the best possible experience for the community.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">New Player Guide</a></li>
+                        <li><a href="#">Lore Library</a></li>
+                        <li><a href="#">Video Tutorials</a></li>
+                        <li><a href="#">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Premium</h4>
+                    <ul>
+                        <li><a href="#">Subscribe</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wowhead Replica. All rights reserved. World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

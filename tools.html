@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools - Wowhead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-links">
+                    <a href="#" class="header-link">Live</a>
+                    <a href="#" class="header-link">PTR</a>
+                    <a href="#" class="header-link">11.1.7PTR</a>
+                    <a href="#" class="header-link">11.1.0</a>
+                </div>
+                <div class="header-actions">
+                    <div class="theme-selector">
+                        <select id="theme-select" class="theme-select">
+                            <option value="light">🌞 Light</option>
+                            <option value="dark">🌙 Dark</option>
+                            <option value="auto">🔄 Auto</option>
+                        </select>
+                    </div>
+                    <button class="premium-btn">Get Wowhead Premium $2 A Month</button>
+                    <div class="user-actions">
+                        <button class="login-btn">Log In</button>
+                        <button class="register-btn">Register</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="logo">
+                    <img src="https://wow.zamimg.com/images/logos/wowhead-logo.png" alt="Wowhead" class="logo-img">
+                </div>
+                <div class="nav-links">
+                    <a href="/database" class="nav-link">Database</a>
+                    <a href="/guides" class="nav-link">Guides</a>
+                    <a href="/news" class="nav-link">News</a>
+                    <a href="/tools" class="nav-link active">Tools</a>
+                    <a href="/more" class="nav-link">More</a>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search tools..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="/">Home</a> > Tools
+            </nav>
+
+            <!-- Tools Header -->
+            <div class="article-header">
+                <div class="guide-contents">
+                    <h3>WoW Tools</h3>
+                    <div class="patch-info">
+                        <span class="patch-badge">Updated for 11.1.5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools Content -->
+            <article class="article">
+                <header class="article-title-section">
+                    <h1 class="article-title">World of Warcraft Tools & Calculators</h1>
+                    <div class="article-meta">
+                        <span class="updated">Updated: 2025/03/19</span>
+                        <span class="tool-count">25+ interactive tools</span>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <!-- Featured Tools -->
+                    <section class="content-section">
+                        <h2>⭐ Featured Tools</h2>
+                        <div class="featured-tools">
+                            <div class="tool-card featured premium">
+                                <div class="tool-icon">🎯</div>
+                                <div class="tool-content">
+                                    <h3><a href="#">Hero Talent Calculator</a></h3>
+                                    <p>Plan your Hero Talent builds for The War Within with our interactive calculator. Features all 39 Hero Talent trees with real-time stat calculations and export functionality.</p>
+                                    <div class="tool-tags">
+                                        <span class="tool-tag new">New</span>
+                                        <span class="tool-tag premium">Premium</span>
+                                        <span class="tool-tag popular">Popular</span>
+                                    </div>
+                                    <div class="tool-meta">
+                                        <span class="tool-type">Calculator</span>
+                                        <span class="tool-users">45K users this week</span>
+                                        <span class="tool-rating">⭐ 4.9/5</span>
+                                        <span class="tool-updated">Updated 1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tool-card featured">
+                                <div class="tool-icon">⚔️</div>
+                                <div class="tool-content">
+                                    <h3><a href="#">Mythic+ Score Calculator & Route Planner</a></h3>
+                                    <p>Calculate your Mythic+ rating, plan optimal routes, and track your progress through Season 1. Includes all 8 dungeons with detailed strategies and timer predictions.</p>
+                                    <div class="tool-tags">
+                                        <span class="tool-tag mythic">M+</span>
+                                        <span class="tool-tag routes">Routes</span>
+                                        <span class="tool-tag tracker">Tracker</span>
+                                    </div>
+                                    <div class="tool-meta">
+                                        <span class="tool-type">Calculator</span>
+                                        <span class="tool-users">32K users this week</span>
+                                        <span class="tool-rating">⭐ 4.8/5</span>
+                                        <span class="tool-updated">Updated 2 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tool-card featured">
+                                <div class="tool-icon">🛡️</div>
+                                <div class="tool-content">
+                                    <h3><a href="#">Advanced Gear Optimizer</a></h3>
+                                    <p>Optimize your gear with advanced stat weights, socket combinations, and enchant recommendations. Supports all classes and specializations with real-time DPS/HPS calculations.</p>
+                                    <div class="tool-tags">
+                                        <span class="tool-tag gear">Gear</span>
+                                        <span class="tool-tag optimizer">Optimizer</span>
+                                        <span class="tool-tag advanced">Advanced</span>
+                                    </div>
+                                    <div class="tool-meta">
+                                        <span class="tool-type">Optimizer</span>
+                                        <span class="tool-users">28K users this week</span>
+                                        <span class="tool-rating">⭐ 4.7/5</span>
+                                        <span class="tool-updated">Updated 3 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tool-card featured">
+                                <div class="tool-icon">🌊</div>
+                                <div class="tool-content">
+                                    <h3><a href="#">Delves Companion & Reward Tracker</a></h3>
+                                    <p>Complete delves guide with Brann companion builds, tier difficulty calculator, and comprehensive reward tracking. Plan your weekly delves for maximum efficiency.</p>
+                                    <div class="tool-tags">
+                                        <span class="tool-tag delves">Delves</span>
+                                        <span class="tool-tag brann">Brann</span>
+                                        <span class="tool-tag rewards">Rewards</span>
+                                    </div>
+                                    <div class="tool-meta">
+                                        <span class="tool-type">Planner</span>
+                                        <span class="tool-users">19K users this week</span>
+                                        <span class="tool-rating">⭐ 4.6/5</span>
+                                        <span class="tool-updated">Updated 1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Tool Categories -->
+                    <section class="content-section">
+                        <h2>🛠️ Tool Categories</h2>
+                        <div class="tools-grid">
+                            <div class="tool-category">
+                                <h3>🎯 Character Tools</h3>
+                                <div class="tool-list">
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">📊</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Talent Calculator</a></h4>
+                                            <p>Plan your talent builds for all classes and specs</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🏆</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Hero Talent Planner</a></h4>
+                                            <p>Design your Hero Talent combinations</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">📈</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Stat Priority Calculator</a></h4>
+                                            <p>Optimize your secondary stats</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🎮</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Character Planner</a></h4>
+                                            <p>Plan your character progression</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tool-category">
+                                <h3>⚔️ Combat Tools</h3>
+                                <div class="tool-list">
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">💥</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">DPS Calculator</a></h4>
+                                            <p>Calculate theoretical DPS for different builds</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🛡️</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Survivability Calculator</a></h4>
+                                            <p>Analyze your defensive capabilities</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">⏱️</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Rotation Optimizer</a></h4>
+                                            <p>Optimize your ability rotations</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🎯</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Hit Rating Calculator</a></h4>
+                                            <p>Calculate hit and expertise requirements</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tool-category">
+                                <h3>🏰 PvE Tools</h3>
+                                <div class="tool-list">
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🗝️</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Mythic+ Calculator</a></h4>
+                                            <p>Track your M+ score and progress</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🏆</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Raid Loot Tracker</a></h4>
+                                            <p>Track raid drops and personal loot</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🗺️</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Delves Planner</a></h4>
+                                            <p>Plan your delves runs and rewards</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">📅</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Great Vault Tracker</a></h4>
+                                            <p>Track your weekly vault progress</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tool-category">
+                                <h3>🔨 Profession Tools</h3>
+                                <div class="tool-list">
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">💰</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Profession Profit Calculator</a></h4>
+                                            <p>Calculate crafting profits and costs</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">📋</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Recipe Tracker</a></h4>
+                                            <p>Track learned recipes and materials</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">⚡</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Skill Point Calculator</a></h4>
+                                            <p>Plan your profession skill progression</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🎨</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Transmog Planner</a></h4>
+                                            <p>Design and save transmog sets</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tool-category">
+                                <h3>📊 Analysis Tools</h3>
+                                <div class="tool-list">
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">📈</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Log Analyzer</a></h4>
+                                            <p>Analyze combat logs and performance</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🔍</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Gear Comparison Tool</a></h4>
+                                            <p>Compare gear pieces and upgrades</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">📊</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Performance Tracker</a></h4>
+                                            <p>Track your performance over time</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🎯</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Simulation Tool</a></h4>
+                                            <p>Simulate different scenarios and builds</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tool-category">
+                                <h3>🌍 Utility Tools</h3>
+                                <div class="tool-list">
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🗺️</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Interactive Maps</a></h4>
+                                            <p>Explore zones with interactive maps</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">⏰</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Event Calendar</a></h4>
+                                            <p>Track in-game events and schedules</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">🔄</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Reset Tracker</a></h4>
+                                            <p>Track daily and weekly resets</p>
+                                        </div>
+                                    </div>
+                                    <div class="tool-item">
+                                        <div class="tool-icon-small">📱</div>
+                                        <div class="tool-info">
+                                            <h4><a href="#">Mobile Companion</a></h4>
+                                            <p>Access tools on your mobile device</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Popular Tools -->
+                    <section class="content-section">
+                        <h2>🔥 Most Popular Tools</h2>
+                        <div class="popular-tools">
+                            <div class="popular-tool">
+                                <span class="tool-rank">#1</span>
+                                <div class="tool-content">
+                                    <h4><a href="#">Talent Calculator</a></h4>
+                                    <span class="tool-usage">156K uses this week</span>
+                                </div>
+                            </div>
+                            <div class="popular-tool">
+                                <span class="tool-rank">#2</span>
+                                <div class="tool-content">
+                                    <h4><a href="#">Mythic+ Calculator</a></h4>
+                                    <span class="tool-usage">89K uses this week</span>
+                                </div>
+                            </div>
+                            <div class="popular-tool">
+                                <span class="tool-rank">#3</span>
+                                <div class="tool-content">
+                                    <h4><a href="#">DPS Calculator</a></h4>
+                                    <span class="tool-usage">67K uses this week</span>
+                                </div>
+                            </div>
+                            <div class="popular-tool">
+                                <span class="tool-rank">#4</span>
+                                <div class="tool-content">
+                                    <h4><a href="#">Profession Calculator</a></h4>
+                                    <span class="tool-usage">54K uses this week</span>
+                                </div>
+                            </div>
+                            <div class="popular-tool">
+                                <span class="tool-rank">#5</span>
+                                <div class="tool-content">
+                                    <h4><a href="#">Gear Comparison</a></h4>
+                                    <span class="tool-usage">43K uses this week</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Recently Updated -->
+                    <section class="content-section">
+                        <h2>🆕 Recently Updated Tools</h2>
+                        <div class="updated-tools">
+                            <div class="update-item">
+                                <div class="update-date">Mar 19, 2025</div>
+                                <div class="update-info">
+                                    <h4><a href="#">Hero Talent Calculator</a></h4>
+                                    <p>Added support for all new Hero Talent combinations in Patch 11.1.5</p>
+                                </div>
+                            </div>
+                            <div class="update-item">
+                                <div class="update-date">Mar 18, 2025</div>
+                                <div class="update-info">
+                                    <h4><a href="#">Mythic+ Calculator</a></h4>
+                                    <p>Updated with new affix rotations and scoring system changes</p>
+                                </div>
+                            </div>
+                            <div class="update-item">
+                                <div class="update-date">Mar 17, 2025</div>
+                                <div class="update-info">
+                                    <h4><a href="#">Delves Planner</a></h4>
+                                    <p>Added new delves from The War Within and updated reward tables</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="#">Talent Calculator</a></li>
+                        <li><a href="#">DPS Calculator</a></li>
+                        <li><a href="#">Gear Planner</a></li>
+                        <li><a href="#">Profession Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Calculators</h4>
+                    <ul>
+                        <li><a href="#">Mythic+ Score</a></li>
+                        <li><a href="#">Stat Priority</a></li>
+                        <li><a href="#">Hit Rating</a></li>
+                        <li><a href="#">Survivability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Premium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wowhead Replica. All rights reserved. World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

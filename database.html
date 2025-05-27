@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database - Wowhead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-links">
+                    <a href="#" class="header-link">Live</a>
+                    <a href="#" class="header-link">PTR</a>
+                    <a href="#" class="header-link">11.1.7PTR</a>
+                    <a href="#" class="header-link">11.1.0</a>
+                </div>
+                <div class="header-actions">
+                    <div class="theme-selector">
+                        <select id="theme-select" class="theme-select">
+                            <option value="light">🌞 Light</option>
+                            <option value="dark">🌙 Dark</option>
+                            <option value="auto">🔄 Auto</option>
+                        </select>
+                    </div>
+                    <button class="premium-btn">Get Wowhead Premium $2 A Month</button>
+                    <div class="user-actions">
+                        <button class="login-btn">Log In</button>
+                        <button class="register-btn">Register</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="logo">
+                    <img src="https://wow.zamimg.com/images/logos/wowhead-logo.png" alt="Wowhead" class="logo-img">
+                </div>
+                <div class="nav-links">
+                    <a href="/database" class="nav-link active">Database</a>
+                    <a href="/guides" class="nav-link">Guides</a>
+                    <a href="/news" class="nav-link">News</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/more" class="nav-link">More</a>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search items, spells, NPCs..." class="search-input" id="database-search">
+                    <button class="search-btn">🔍</button>
+                    <div class="search-suggestions" id="search-suggestions" style="display: none;"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="/">Home</a> > Database
+            </nav>
+
+            <!-- Database Header -->
+            <div class="article-header">
+                <div class="guide-contents">
+                    <h3>WoW Database</h3>
+                    <div class="patch-info">
+                        <span class="patch-badge">Patch 11.1.5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database Content -->
+            <article class="article">
+                <header class="article-title-section">
+                    <h1 class="article-title">World of Warcraft Database</h1>
+                    <div class="article-meta">
+                        <span class="updated">Updated: 2025/03/19</span>
+                        <span class="entries">Over 500,000 entries</span>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <!-- Search Section -->
+                    <section class="content-section">
+                        <h2>Quick Search</h2>
+                        <div class="database-search-container">
+                            <div class="search-categories">
+                                <button class="category-btn active" data-category="items">Items</button>
+                                <button class="category-btn" data-category="spells">Spells</button>
+                                <button class="category-btn" data-category="npcs">NPCs</button>
+                                <button class="category-btn" data-category="quests">Quests</button>
+                                <button class="category-btn" data-category="zones">Zones</button>
+                                <button class="category-btn" data-category="achievements">Achievements</button>
+                            </div>
+                            <div class="advanced-search">
+                                <input type="text" placeholder="Enter search term..." class="advanced-search-input">
+                                <button class="advanced-search-btn">Search Database</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Popular Categories -->
+                    <section class="content-section">
+                        <h2>Popular Categories</h2>
+                        <div class="category-grid">
+                            <div class="category-card">
+                                <h3>⚔️ Weapons</h3>
+                                <p>Swords, axes, staves, and more</p>
+                                <span class="item-count">12,450 items</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>🛡️ Armor</h3>
+                                <p>Cloth, leather, mail, and plate</p>
+                                <span class="item-count">18,230 items</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>💍 Accessories</h3>
+                                <p>Rings, trinkets, and necklaces</p>
+                                <span class="item-count">5,670 items</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>🧪 Consumables</h3>
+                                <p>Potions, food, and elixirs</p>
+                                <span class="item-count">8,920 items</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>🏆 Mounts</h3>
+                                <p>Ground and flying mounts</p>
+                                <span class="item-count">450 mounts</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>🐾 Pets</h3>
+                                <p>Battle pets and companions</p>
+                                <span class="item-count">1,200 pets</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Recent Updates -->
+                    <section class="content-section">
+                        <h2>Recent Database Updates</h2>
+                        <div class="recent-updates">
+                            <div class="update-item">
+                                <span class="update-date">Mar 19, 2025</span>
+                                <span class="update-type">Items</span>
+                                <span class="update-desc">Added 45 new items from Patch 11.1.5</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-date">Mar 18, 2025</span>
+                                <span class="update-type">Spells</span>
+                                <span class="update-desc">Updated spell tooltips for all classes</span>
+                            </div>
+                            <div class="update-item">
+                                <span class="update-date">Mar 17, 2025</span>
+                                <span class="update-type">NPCs</span>
+                                <span class="update-desc">Added new NPCs from The War Within</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Featured Items -->
+                    <section class="content-section">
+                        <h2>Featured Items</h2>
+                        <div class="featured-items">
+                            <div class="item-card legendary">
+                                <div class="item-icon legendary-icon">⚔️</div>
+                                <div class="item-info">
+                                    <h4 class="legendary-text">Ashkandur, Fall of the Brotherhood</h4>
+                                    <p class="item-type">Two-Hand Sword</p>
+                                    <p class="item-level">Item Level 639</p>
+                                    <p class="item-source">Source: Nerub-ar Palace</p>
+                                    <div class="item-stats">
+                                        <span class="stat">+2,847 Strength</span>
+                                        <span class="stat">+4,271 Stamina</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-card epic">
+                                <div class="item-icon epic-icon">🛡️</div>
+                                <div class="item-info">
+                                    <h4 class="epic-text">Void-Touched Plate Helm</h4>
+                                    <p class="item-type">Plate Helmet</p>
+                                    <p class="item-level">Item Level 626</p>
+                                    <p class="item-source">Source: The Dawnbreaker</p>
+                                    <div class="item-stats">
+                                        <span class="stat">+1,923 Armor</span>
+                                        <span class="stat">+2,156 Stamina</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-card epic">
+                                <div class="item-icon epic-icon">💍</div>
+                                <div class="item-info">
+                                    <h4 class="epic-text">Ring of Earthen Might</h4>
+                                    <p class="item-type">Ring</p>
+                                    <p class="item-level">Item Level 619</p>
+                                    <p class="item-source">Source: Ara-Kara, City of Echoes</p>
+                                    <div class="item-stats">
+                                        <span class="stat">+1,445 Critical Strike</span>
+                                        <span class="stat">+2,167 Mastery</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-card rare">
+                                <div class="item-icon rare-icon">🏹</div>
+                                <div class="item-info">
+                                    <h4 class="rare-text">Nerubian Crossbow</h4>
+                                    <p class="item-type">Crossbow</p>
+                                    <p class="item-level">Item Level 606</p>
+                                    <p class="item-source">Source: Azj-Kahet</p>
+                                    <div class="item-stats">
+                                        <span class="stat">+1,734 Agility</span>
+                                        <span class="stat">+2,601 Stamina</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-card epic">
+                                <div class="item-icon epic-icon">🧙</div>
+                                <div class="item-info">
+                                    <h4 class="epic-text">Staff of the Void Caller</h4>
+                                    <p class="item-type">Staff</p>
+                                    <p class="item-level">Item Level 623</p>
+                                    <p class="item-source">Source: Cinderbrew Meadery</p>
+                                    <div class="item-stats">
+                                        <span class="stat">+1,889 Intellect</span>
+                                        <span class="stat">+2,834 Stamina</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-card epic">
+                                <div class="item-icon epic-icon">🛡️</div>
+                                <div class="item-info">
+                                    <h4 class="epic-text">Earthen Defender's Aegis</h4>
+                                    <p class="item-type">Shield</p>
+                                    <p class="item-level">Item Level 616</p>
+                                    <p class="item-source">Source: The Stonevault</p>
+                                    <div class="item-stats">
+                                        <span class="stat">+1,567 Armor</span>
+                                        <span class="stat">+1,923 Stamina</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Browse by Expansion -->
+                    <section class="content-section">
+                        <h2>Browse by Expansion</h2>
+                        <div class="expansion-grid">
+                            <div class="expansion-card current">
+                                <div class="expansion-logo">🌊</div>
+                                <h3>The War Within</h3>
+                                <p>Explore the depths of Azeroth</p>
+                                <span class="expansion-year">2024</span>
+                                <div class="expansion-stats">
+                                    <span>4 Zones</span>
+                                    <span>8 Dungeons</span>
+                                    <span>1 Raid</span>
+                                </div>
+                            </div>
+                            <div class="expansion-card">
+                                <div class="expansion-logo">🐉</div>
+                                <h3>Dragonflight</h3>
+                                <p>Return to the Dragon Isles</p>
+                                <span class="expansion-year">2022</span>
+                                <div class="expansion-stats">
+                                    <span>5 Zones</span>
+                                    <span>12 Dungeons</span>
+                                    <span>3 Raids</span>
+                                </div>
+                            </div>
+                            <div class="expansion-card">
+                                <div class="expansion-logo">👑</div>
+                                <h3>Shadowlands</h3>
+                                <p>Journey beyond the veil</p>
+                                <span class="expansion-year">2020</span>
+                                <div class="expansion-stats">
+                                    <span>5 Zones</span>
+                                    <span>10 Dungeons</span>
+                                    <span>3 Raids</span>
+                                </div>
+                            </div>
+                            <div class="expansion-card">
+                                <div class="expansion-logo">⚓</div>
+                                <h3>Battle for Azeroth</h3>
+                                <p>War between Alliance and Horde</p>
+                                <span class="expansion-year">2018</span>
+                                <div class="expansion-stats">
+                                    <span>10 Zones</span>
+                                    <span>12 Dungeons</span>
+                                    <span>3 Raids</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Database Statistics -->
+                    <section class="content-section">
+                        <h2>Database Statistics</h2>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number">523,847</div>
+                                <div class="stat-label">Total Items</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">89,234</div>
+                                <div class="stat-label">Spells & Abilities</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">45,678</div>
+                                <div class="stat-label">NPCs</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">23,456</div>
+                                <div class="stat-label">Quests</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">1,234</div>
+                                <div class="stat-label">Zones</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number">12,345</div>
+                                <div class="stat-label">Achievements</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Database</h4>
+                    <ul>
+                        <li><a href="#">Items</a></li>
+                        <li><a href="#">Spells</a></li>
+                        <li><a href="#">NPCs</a></li>
+                        <li><a href="#">Quests</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="#">Talent Calculator</a></li>
+                        <li><a href="#">Gear Planner</a></li>
+                        <li><a href="#">DPS Calculator</a></li>
+                        <li><a href="#">Profession Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Premium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wowhead Replica. All rights reserved. World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="database.js"></script>
+</body>
+</html> 

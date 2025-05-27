@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Wowhead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-links">
+                    <a href="#" class="header-link">Live</a>
+                    <a href="#" class="header-link">PTR</a>
+                    <a href="#" class="header-link">11.1.7PTR</a>
+                    <a href="#" class="header-link">11.1.0</a>
+                </div>
+                <div class="header-actions">
+                    <div class="theme-selector">
+                        <select id="theme-select" class="theme-select">
+                            <option value="light">🌞 Light</option>
+                            <option value="dark">🌙 Dark</option>
+                            <option value="auto">🔄 Auto</option>
+                        </select>
+                    </div>
+                    <button class="premium-btn">Get Wowhead Premium $2 A Month</button>
+                    <div class="user-actions">
+                        <button class="login-btn">Log In</button>
+                        <button class="register-btn">Register</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="logo">
+                    <img src="https://wow.zamimg.com/images/logos/wowhead-logo.png" alt="Wowhead" class="logo-img">
+                </div>
+                <div class="nav-links">
+                    <a href="/database" class="nav-link">Database</a>
+                    <a href="/guides" class="nav-link">Guides</a>
+                    <a href="/news" class="nav-link active">News</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/more" class="nav-link">More</a>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search news..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="/">Home</a> > News
+            </nav>
+
+            <!-- News Header -->
+            <div class="article-header">
+                <div class="guide-contents">
+                    <h3>WoW News</h3>
+                    <div class="patch-info">
+                        <span class="patch-badge">Latest Updates</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Content -->
+            <article class="article">
+                <header class="article-title-section">
+                    <h1 class="article-title">World of Warcraft News</h1>
+                    <div class="article-meta">
+                        <span class="updated">Updated: 2025/03/19</span>
+                        <span class="news-count">Breaking news and updates</span>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <!-- Breaking News -->
+                    <section class="content-section">
+                        <h2>🚨 Breaking News</h2>
+                        <div class="breaking-news">
+                            <div class="news-card breaking">
+                                <div class="news-badge">BREAKING</div>
+                                <div class="news-content">
+                                    <h3><a href="#">Patch 11.1.5 "Undermined" Now Live: New Delves, Siren Isle Zone, and Major Updates</a></h3>
+                                    <p>The massive content update introduces Siren Isle, 4 new Tier 11 delves, Khadgar's return, Plunderstorm event, and extensive class balance changes across all specializations.</p>
+                                    <div class="news-tags">
+                                        <span class="news-tag patch">Patch</span>
+                                        <span class="news-tag content">New Content</span>
+                                        <span class="news-tag hot">Hot</span>
+                                    </div>
+                                    <div class="news-meta">
+                                        <span class="news-time">2 hours ago</span>
+                                        <span class="news-author">By Wowhead Staff</span>
+                                        <span class="news-comments">1,247 comments</span>
+                                        <span class="news-views">89K views</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card urgent">
+                                <div class="news-badge urgent">URGENT</div>
+                                <div class="news-content">
+                                    <h3><a href="#">Emergency Maintenance: Servers Down for Critical Hotfix</a></h3>
+                                    <p>All realms are currently offline for an emergency hotfix addressing critical issues with Warband functionality and mythic+ key depletion bugs.</p>
+                                    <div class="news-tags">
+                                        <span class="news-tag maintenance">Maintenance</span>
+                                        <span class="news-tag urgent">Urgent</span>
+                                    </div>
+                                    <div class="news-meta">
+                                        <span class="news-time">45 minutes ago</span>
+                                        <span class="news-author">By Blizzard CS</span>
+                                        <span class="news-comments">892 comments</span>
+                                        <span class="news-views">156K views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Featured News -->
+                    <section class="content-section">
+                        <h2>📰 Featured News</h2>
+                        <div class="featured-news">
+                            <div class="news-card featured">
+                                <div class="news-image">🏆</div>
+                                <div class="news-content">
+                                    <h3><a href="#">World First Nerub-ar Palace Mythic Clear by Echo</a></h3>
+                                    <p>Echo claims the world first mythic clear of Nerub-ar Palace after an intense 16-day race.</p>
+                                    <div class="news-meta">
+                                        <span class="news-time">6 hours ago</span>
+                                        <span class="news-author">By Squishei</span>
+                                        <span class="news-comments">342 comments</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-card featured">
+                                <div class="news-image">⚔️</div>
+                                <div class="news-content">
+                                    <h3><a href="#">Mythic+ Season 1 Affix Rotation Announced</a></h3>
+                                    <p>Blizzard reveals the complete affix rotation for The War Within's first Mythic+ season.</p>
+                                    <div class="news-meta">
+                                        <span class="news-time">8 hours ago</span>
+                                        <span class="news-author">By Dratnos</span>
+                                        <span class="news-comments">89 comments</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Latest News -->
+                    <section class="content-section">
+                        <h2>📝 Latest News</h2>
+                        <div class="latest-news">
+                            <div class="news-item">
+                                <div class="news-time">Mar 19, 2025 - 10:30 AM</div>
+                                <div class="news-info">
+                                    <h4><a href="#">Earthen Racial Abilities Detailed</a></h4>
+                                    <p>Complete breakdown of the new Earthen allied race abilities and their impact on gameplay.</p>
+                                    <span class="news-author">By Icy Veins</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-time">Mar 19, 2025 - 8:15 AM</div>
+                                <div class="news-info">
+                                    <h4><a href="#">Hero Talents Hotfixes Applied</a></h4>
+                                    <p>Several Hero Talent trees receive balance adjustments in today's hotfix.</p>
+                                    <span class="news-author">By Method</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-time">Mar 18, 2025 - 6:45 PM</div>
+                                <div class="news-info">
+                                    <h4><a href="#">Delves Difficulty Scaling Explained</a></h4>
+                                    <p>Blizzard clarifies how delves scale with group size and player skill level.</p>
+                                    <span class="news-author">By Bellular</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-time">Mar 18, 2025 - 3:20 PM</div>
+                                <div class="news-info">
+                                    <h4><a href="#">Warbands Bank Expansion Coming Soon</a></h4>
+                                    <p>Additional Warband bank tabs will be available in a future patch.</p>
+                                    <span class="news-author">By Wowhead Staff</span>
+                                </div>
+                            </div>
+                            <div class="news-item">
+                                <div class="news-time">Mar 18, 2025 - 12:00 PM</div>
+                                <div class="news-info">
+                                    <h4><a href="#">PvP Season 1 Rewards Preview</a></h4>
+                                    <p>Take a look at the exclusive rewards coming with The War Within's first PvP season.</p>
+                                    <span class="news-author">By Skill Capped</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- News Categories -->
+                    <section class="content-section">
+                        <h2>📂 News Categories</h2>
+                        <div class="category-grid">
+                            <div class="category-card">
+                                <h3>🎮 Game Updates</h3>
+                                <p>Patches, hotfixes, and game changes</p>
+                                <span class="article-count">45 articles this week</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>🏆 Esports</h3>
+                                <p>Competitive WoW and tournaments</p>
+                                <span class="article-count">12 articles this week</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>🎨 Community</h3>
+                                <p>Fan art, stories, and community highlights</p>
+                                <span class="article-count">28 articles this week</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>💼 Developer News</h3>
+                                <p>Blue posts and developer insights</p>
+                                <span class="article-count">8 articles this week</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>🎪 Events</h3>
+                                <p>In-game events and celebrations</p>
+                                <span class="article-count">6 articles this week</span>
+                            </div>
+                            <div class="category-card">
+                                <h3>📊 Data Mining</h3>
+                                <p>PTR discoveries and upcoming content</p>
+                                <span class="article-count">15 articles this week</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Trending Topics -->
+                    <section class="content-section">
+                        <h2>🔥 Trending Topics</h2>
+                        <div class="trending-topics">
+                            <div class="trending-item">
+                                <span class="trend-rank">#1</span>
+                                <div class="trend-content">
+                                    <h4>The War Within Launch</h4>
+                                    <span class="trend-mentions">2.3K mentions</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <span class="trend-rank">#2</span>
+                                <div class="trend-content">
+                                    <h4>Mythic+ Tier Lists</h4>
+                                    <span class="trend-mentions">1.8K mentions</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <span class="trend-rank">#3</span>
+                                <div class="trend-content">
+                                    <h4>Earthen Allied Race</h4>
+                                    <span class="trend-mentions">1.5K mentions</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <span class="trend-rank">#4</span>
+                                <div class="trend-content">
+                                    <h4>Hero Talents</h4>
+                                    <span class="trend-mentions">1.2K mentions</span>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <span class="trend-rank">#5</span>
+                                <div class="trend-content">
+                                    <h4>Delves System</h4>
+                                    <span class="trend-mentions">980 mentions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Blue Posts -->
+                    <section class="content-section">
+                        <h2>💙 Recent Blue Posts</h2>
+                        <div class="blue-posts">
+                            <div class="blue-post">
+                                <div class="blue-header">
+                                    <span class="blue-author">Kaivax - Community Manager</span>
+                                    <span class="blue-time">3 hours ago</span>
+                                </div>
+                                <div class="blue-content">
+                                    <h4>Mythic+ Affix Balance Changes</h4>
+                                    <p>We're monitoring the performance of the new affixes and will make adjustments as needed. Thank you for your feedback!</p>
+                                </div>
+                            </div>
+                            <div class="blue-post">
+                                <div class="blue-header">
+                                    <span class="blue-author">Linxy - Community Manager</span>
+                                    <span class="blue-time">1 day ago</span>
+                                </div>
+                                <div class="blue-content">
+                                    <h4>Delves Feedback Collection</h4>
+                                    <p>We're collecting feedback on the delves experience. Please share your thoughts on difficulty scaling and rewards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>News</h4>
+                    <ul>
+                        <li><a href="#">Game Updates</a></li>
+                        <li><a href="#">Esports</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Developer News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="#">Talent Calculator</a></li>
+                        <li><a href="#">Gear Planner</a></li>
+                        <li><a href="#">DPS Calculator</a></li>
+                        <li><a href="#">Profession Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Premium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wowhead Replica. All rights reserved. World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

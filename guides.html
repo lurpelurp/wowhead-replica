@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guides - Wowhead</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="header-links">
+                    <a href="#" class="header-link">Live</a>
+                    <a href="#" class="header-link">PTR</a>
+                    <a href="#" class="header-link">11.1.7PTR</a>
+                    <a href="#" class="header-link">11.1.0</a>
+                </div>
+                <div class="header-actions">
+                    <div class="theme-selector">
+                        <select id="theme-select" class="theme-select">
+                            <option value="light">🌞 Light</option>
+                            <option value="dark">🌙 Dark</option>
+                            <option value="auto">🔄 Auto</option>
+                        </select>
+                    </div>
+                    <button class="premium-btn">Get Wowhead Premium $2 A Month</button>
+                    <div class="user-actions">
+                        <button class="login-btn">Log In</button>
+                        <button class="register-btn">Register</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <div class="logo">
+                    <img src="https://wow.zamimg.com/images/logos/wowhead-logo.png" alt="Wowhead" class="logo-img">
+                </div>
+                <div class="nav-links">
+                    <a href="/database" class="nav-link">Database</a>
+                    <a href="/guides" class="nav-link active">Guides</a>
+                    <a href="/news" class="nav-link">News</a>
+                    <a href="/tools" class="nav-link">Tools</a>
+                    <a href="/more" class="nav-link">More</a>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search guides..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="/">Home</a> > Guides
+            </nav>
+
+            <!-- Guides Header -->
+            <div class="article-header">
+                <div class="guide-contents">
+                    <h3>WoW Guides</h3>
+                    <div class="patch-info">
+                        <span class="patch-badge">Patch 11.1.5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guides Content -->
+            <article class="article">
+                <header class="article-title-section">
+                    <h1 class="article-title">World of Warcraft Guides</h1>
+                    <div class="article-meta">
+                        <span class="updated">Updated: 2025/03/19</span>
+                        <span class="guide-count">Over 2,000 guides</span>
+                    </div>
+                </header>
+
+                <div class="article-content">
+                    <!-- Featured Guides -->
+                    <section class="content-section">
+                        <h2>🌟 Featured Guides</h2>
+                        <div class="featured-guides">
+                            <div class="guide-card featured premium">
+                                <div class="guide-image">🏰</div>
+                                <div class="guide-content">
+                                    <h3><a href="/">The War Within Expansion Overview</a></h3>
+                                    <p>Complete guide to the latest expansion including new zones, features, and storylines. Covers Khaz Algar, Hero Talents, Delves, and more.</p>
+                                    <div class="guide-tags">
+                                        <span class="tag">Expansion</span>
+                                        <span class="tag">Beginner</span>
+                                        <span class="tag premium-tag">Premium</span>
+                                    </div>
+                                    <div class="guide-meta">
+                                        <span class="author">By iMX3</span>
+                                        <span class="rating">⭐ 4.8/5 (2,341 votes)</span>
+                                        <span class="views">125K views</span>
+                                        <span class="updated">Updated 2 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guide-card featured">
+                                <div class="guide-image">⚔️</div>
+                                <div class="guide-content">
+                                    <h3><a href="#">Mythic+ Season 1 Complete Guide</a></h3>
+                                    <p>Master all 8 dungeons in The War Within Season 1. Includes routes, strategies, and affix guides for every key level.</p>
+                                    <div class="guide-tags">
+                                        <span class="tag">Mythic+</span>
+                                        <span class="tag">Dungeons</span>
+                                        <span class="tag">Advanced</span>
+                                    </div>
+                                    <div class="guide-meta">
+                                        <span class="author">By Dratnos</span>
+                                        <span class="rating">⭐ 4.9/5 (1,876 votes)</span>
+                                        <span class="views">89K views</span>
+                                        <span class="updated">Updated 1 day ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guide-card featured">
+                                <div class="guide-image">🛡️</div>
+                                <div class="guide-content">
+                                    <h3><a href="#">Hero Talents Deep Dive</a></h3>
+                                    <p>Comprehensive analysis of all Hero Talent trees, optimal builds, and synergies for every class and specialization.</p>
+                                    <div class="guide-tags">
+                                        <span class="tag">Hero Talents</span>
+                                        <span class="tag">Builds</span>
+                                        <span class="tag">Theory</span>
+                                    </div>
+                                    <div class="guide-meta">
+                                        <span class="author">By Icy Veins</span>
+                                        <span class="rating">⭐ 4.7/5 (3,124 votes)</span>
+                                        <span class="views">156K views</span>
+                                        <span class="updated">Updated 3 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guide-card featured">
+                                <div class="guide-image">🌊</div>
+                                <div class="guide-content">
+                                    <h3><a href="#">Delves: Solo Endgame Content Guide</a></h3>
+                                    <p>Everything about the new 1-4 player endgame content. Tier lists, rewards, strategies, and Brann companion optimization.</p>
+                                    <div class="guide-tags">
+                                        <span class="tag">Delves</span>
+                                        <span class="tag">Solo</span>
+                                        <span class="tag">Endgame</span>
+                                    </div>
+                                    <div class="guide-meta">
+                                        <span class="author">By Method</span>
+                                        <span class="rating">⭐ 4.6/5 (987 votes)</span>
+                                        <span class="views">73K views</span>
+                                        <span class="updated">Updated 4 days ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Guide Categories -->
+                    <section class="content-section">
+                        <h2>📚 Guide Categories</h2>
+                        <div class="category-grid">
+                            <div class="category-card">
+                                <h3>🎯 Class Guides</h3>
+                                <p>Builds, rotations, and strategies for all classes</p>
+                                <ul class="category-links">
+                                    <li><a href="#">Death Knight</a></li>
+                                    <li><a href="#">Demon Hunter</a></li>
+                                    <li><a href="#">Druid</a></li>
+                                    <li><a href="#">Evoker</a></li>
+                                    <li><a href="#">Hunter</a></li>
+                                    <li><a href="#">Mage</a></li>
+                                    <li><a href="#">Monk</a></li>
+                                    <li><a href="#">Paladin</a></li>
+                                    <li><a href="#">Priest</a></li>
+                                    <li><a href="#">Rogue</a></li>
+                                    <li><a href="#">Shaman</a></li>
+                                    <li><a href="#">Warlock</a></li>
+                                    <li><a href="#">Warrior</a></li>
+                                </ul>
+                            </div>
+                            <div class="category-card">
+                                <h3>🏰 Dungeons & Raids</h3>
+                                <p>Strategies for PvE content</p>
+                                <ul class="category-links">
+                                    <li><a href="#">Nerub-ar Palace</a></li>
+                                    <li><a href="#">Mythic+ Dungeons</a></li>
+                                    <li><a href="#">Delves Guide</a></li>
+                                    <li><a href="#">Raid Tactics</a></li>
+                                </ul>
+                            </div>
+                            <div class="category-card">
+                                <h3>⚔️ PvP Guides</h3>
+                                <p>Arena, battlegrounds, and world PvP</p>
+                                <ul class="category-links">
+                                    <li><a href="#">Arena Guide</a></li>
+                                    <li><a href="#">Battleground Tactics</a></li>
+                                    <li><a href="#">PvP Builds</a></li>
+                                    <li><a href="#">War Mode Guide</a></li>
+                                </ul>
+                            </div>
+                            <div class="category-card">
+                                <h3>🔨 Professions</h3>
+                                <p>Crafting and gathering guides</p>
+                                <ul class="category-links">
+                                    <li><a href="#">Alchemy</a></li>
+                                    <li><a href="#">Blacksmithing</a></li>
+                                    <li><a href="#">Enchanting</a></li>
+                                    <li><a href="#">Engineering</a></li>
+                                    <li><a href="#">Herbalism</a></li>
+                                    <li><a href="#">Inscription</a></li>
+                                    <li><a href="#">Jewelcrafting</a></li>
+                                    <li><a href="#">Leatherworking</a></li>
+                                    <li><a href="#">Mining</a></li>
+                                    <li><a href="#">Skinning</a></li>
+                                    <li><a href="#">Tailoring</a></li>
+                                </ul>
+                            </div>
+                            <div class="category-card">
+                                <h3>🗺️ Leveling & Zones</h3>
+                                <p>Questing and exploration guides</p>
+                                <ul class="category-links">
+                                    <li><a href="#">Khaz Algar Zones</a></li>
+                                    <li><a href="#">Leveling Guide</a></li>
+                                    <li><a href="#">Zone Storylines</a></li>
+                                    <li><a href="#">Treasure Hunting</a></li>
+                                </ul>
+                            </div>
+                            <div class="category-card">
+                                <h3>🏆 Achievements</h3>
+                                <p>Complete achievement guides</p>
+                                <ul class="category-links">
+                                    <li><a href="#">Meta Achievements</a></li>
+                                    <li><a href="#">Exploration</a></li>
+                                    <li><a href="#">Collections</a></li>
+                                    <li><a href="#">Feats of Strength</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Latest Guides -->
+                    <section class="content-section">
+                        <h2>📝 Latest Guides</h2>
+                        <div class="latest-guides">
+                            <div class="guide-item">
+                                <div class="guide-date">Mar 19, 2025</div>
+                                <div class="guide-info">
+                                    <h4><a href="#">Earthen Allied Race Unlock Guide</a></h4>
+                                    <p>Step-by-step guide to unlocking the new Earthen allied race in The War Within.</p>
+                                    <span class="guide-author">By Squishei</span>
+                                </div>
+                            </div>
+                            <div class="guide-item">
+                                <div class="guide-date">Mar 18, 2025</div>
+                                <div class="guide-info">
+                                    <h4><a href="#">Hero Talents Overview</a></h4>
+                                    <p>Complete breakdown of the new Hero Talent system and best builds for each class.</p>
+                                    <span class="guide-author">By Icy Veins</span>
+                                </div>
+                            </div>
+                            <div class="guide-item">
+                                <div class="guide-date">Mar 17, 2025</div>
+                                <div class="guide-info">
+                                    <h4><a href="#">Warbands System Guide</a></h4>
+                                    <p>Everything you need to know about the new account-wide progression system.</p>
+                                    <span class="guide-author">By Bellular</span>
+                                </div>
+                            </div>
+                            <div class="guide-item">
+                                <div class="guide-date">Mar 16, 2025</div>
+                                <div class="guide-info">
+                                    <h4><a href="#">Delves Complete Guide</a></h4>
+                                    <p>Master the new 1-4 player endgame content with our comprehensive delves guide.</p>
+                                    <span class="guide-author">By Method</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Popular This Week -->
+                    <section class="content-section">
+                        <h2>🔥 Popular This Week</h2>
+                        <div class="popular-guides">
+                            <div class="popular-item">
+                                <span class="rank">#1</span>
+                                <div class="popular-content">
+                                    <h4><a href="#">Best DPS Classes in The War Within</a></h4>
+                                    <span class="views">234K views</span>
+                                </div>
+                            </div>
+                            <div class="popular-item">
+                                <span class="rank">#2</span>
+                                <div class="popular-content">
+                                    <h4><a href="#">Mythic+ Tier List Season 1</a></h4>
+                                    <span class="views">189K views</span>
+                                </div>
+                            </div>
+                            <div class="popular-item">
+                                <span class="rank">#3</span>
+                                <div class="popular-content">
+                                    <h4><a href="#">Nerub-ar Palace Normal Guide</a></h4>
+                                    <span class="views">156K views</span>
+                                </div>
+                            </div>
+                            <div class="popular-item">
+                                <span class="rank">#4</span>
+                                <div class="popular-content">
+                                    <h4><a href="#">Khaz Algar Zone Guide</a></h4>
+                                    <span class="views">142K views</span>
+                                </div>
+                            </div>
+                            <div class="popular-item">
+                                <span class="rank">#5</span>
+                                <div class="popular-content">
+                                    <h4><a href="#">Best Professions for Gold Making</a></h4>
+                                    <span class="views">128K views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Guides</h4>
+                    <ul>
+                        <li><a href="#">Class Guides</a></li>
+                        <li><a href="#">Raid Guides</a></li>
+                        <li><a href="#">PvP Guides</a></li>
+                        <li><a href="#">Profession Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="#">Talent Calculator</a></li>
+                        <li><a href="#">Gear Planner</a></li>
+                        <li><a href="#">DPS Calculator</a></li>
+                        <li><a href="#">Profession Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Reddit</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Premium</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wowhead Replica. All rights reserved. World of Warcraft and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment, Inc. in the U.S. and/or other countries.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
